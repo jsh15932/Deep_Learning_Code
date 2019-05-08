@@ -33,3 +33,5 @@ for i in range(1000):
     # W, b 값 변화 출력
     if i % 100 == 0:
         print("{:5}|{:10.4f}|{:10.4}|{:10.6f}".format(i, W.numpy(), b.numpy(), cost))
+
+
