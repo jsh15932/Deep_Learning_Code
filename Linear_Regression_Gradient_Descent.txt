@@ -1,7 +1,7 @@
 Linear Regression - Gradient Descent 과정의 코드
 Gradient Descent는 cost의 값을 최소화시키는 W, b의 값을 찾아가는 알고리즘이다.
 
-# SourceCode
+## SourceCode ##
 
 import tensorflow as tf
 
