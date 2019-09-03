@@ -57,7 +57,7 @@ with tf.Session() as sess:
         print('Epoch:', '%04d' % (epoch + 1),
             'Avg. cost: {:.4}'.format(total_cost / total_batch))
  
-    print('Success!')
+    print('Learning Finished!')
  
     is_correct = tf.equal(tf.argmax(model, 1), tf.argmax(Y, 1))
     accuracy = tf.reduce_mean(tf.cast(is_correct, tf.float32))
