@@ -1,4 +1,4 @@
-## Tensorflow와 MNIST 데이터베이스를 활용한 CNN 예제
+## MNIST 데이터베이스를 활용한 CNN 예제
 TensorFlow에서 CNN을 이용하여 MNIST를 99%로 예측하는 예제입니다.
 
 ```
