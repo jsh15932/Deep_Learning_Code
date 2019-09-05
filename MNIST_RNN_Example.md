@@ -7,10 +7,6 @@ import numpy as np
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("./mnist/data/", one_hot=True)
  
-learning_rate = 0.001
-total_epoch = 30
-batch_size = 128
- 
 n_input = 28
 n_step = 28
 n_hidden = 128
@@ -31,7 +27,11 @@ cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(
     logits=model, labels=Y
 ))
 optimizer = tf.train.AdamOptimizer(learning_rate).minimize(cost)
- 
+
+learning_rate = 0.001
+total_epoch = 30
+batch_size = 128
+
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     total_batch = int(mnist.train.num_examples / batch_size)
