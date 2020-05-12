@@ -1,6 +1,5 @@
-## Multi Variable Linear Regression ##
+# Multi Variable Linear Regression
 
-```
 import tensorflow as tf
 import numpy as np
 
@@ -37,4 +36,3 @@ for i in range(1000+1):
     
     if i % 50 == 0:
       print("{:5} | {:12.4f}".format(i, cost.numpy()))
-```
