@@ -1,4 +1,3 @@
-```
 import tensorflow as tf
 import numpy as np
 
@@ -18,4 +17,3 @@ for feed_W in W_values:
     curr_cost = cost_func(feed_W, X, Y)
     cost_values.append(curr_cost)
     print("{:6.3f} | {:10.5f}".format(feed_W, curr_cost))
-```
