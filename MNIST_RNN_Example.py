@@ -1,7 +1,6 @@
-## MNIST 데이터베이스를 활용한 RNN 예제
-Tensorflow와 MNIST 데이터베이스를 활용한 RNN 예제입니다.
+# MNIST 데이터베이스를 활용한 RNN 예제
+# Tensorflow와 MNIST 데이터베이스를 활용한 RNN 예제입니다.
 
-```
 import tensorflow as tf
 import numpy as np
 from tensorflow.examples.tutorials.mnist import input_data
@@ -60,4 +59,3 @@ with tf.Session() as sess:
     test_xs = mnist.test.images.reshape(test_batch_size, n_step, n_input)
     test_ys = mnist.test.labels
     print('Accuracy:', sess.run(accuracy, feed_dict={X: test_xs, Y: test_ys}))
- ```
