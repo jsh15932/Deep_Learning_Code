@@ -1,6 +1,6 @@
-## MNIST 데이터베이스를 활용한 GAN 예제
-Tensorflow와 MNIST 데이터베이스를 활용하여 GAN으로 특정 숫자의 MNIST 이미지를 생성하는 예제입니다.
-```
+# MNIST 데이터베이스를 활용한 GAN 예제
+# Tensorflow와 MNIST 데이터베이스를 활용하여 GAN으로 특정 숫자의 MNIST 이미지를 생성하는 예제입니다.
+
 import tensorflow as tf
 import numpy as np
 
@@ -129,4 +129,3 @@ with tf.Session() as sess:
                 bbox_inches='tight')
             
             plt.close(fig)
-```
