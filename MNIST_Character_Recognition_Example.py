@@ -1,8 +1,6 @@
-## MNIST 데이터베이스를 활용한 문자인식 프로그램
+# MNIST 데이터베이스를 활용한 문자인식 프로그램
+# 이미지 x가 입력으로 들어오면 그 이미지가 무슨 숫자인지를 해석해서 y로 출력해주는 기본적인 이미지 인식 프로그램입니다.
 
-이미지 x가 입력으로 들어오면 그 이미지가 무슨 숫자인지를 해석해서 y로 출력해주는 기본적인 이미지 인식 프로그램입니다.
-
-```
 # MNIST 데이터를 불러온다.
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
@@ -33,4 +31,3 @@ for i in range(1000):
 correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 print(sess.run(accuracy, feed_dict={x: mnist.test.images, y_: mnist.test.labels}))
-```
