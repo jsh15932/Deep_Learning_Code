@@ -1,6 +1,5 @@
-## Pure Cost Function ##
+# Pure Cost Function
 
-```
 import numpy as np
 
 X = np.array([1,2,3])
@@ -18,5 +17,3 @@ def cost_func(W, X, Y):
 for feed_W in np.linspace(-3, 5, num=15):
     curr_cost = cost_func(feed_W, X, Y)
     print("{:6.3f} | {:10.5f}".format(feed_W, curr_cost))
-```
-    
