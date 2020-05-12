@@ -1,7 +1,6 @@
 # MNIST 데이터베이스를 활용한 CNN 예제
 # TensorFlow에서 CNN을 이용하여 MNIST를 99%로 예측하는 예제입니다.
 
-```
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import random
@@ -66,5 +65,3 @@ print('Learning Finished!')
 correct_prediction = tf.equal(tf.argmax(hypothesis, 1), tf.arg_max(Y, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 print('Accuracy:',sess.run(accuracy,feed_dict={X: mnist.test.images, Y:mnist.test.labels}))
-```
-
