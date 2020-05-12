@@ -1,6 +1,6 @@
-## MNIST 데이터베이스를 활용한 DCGAN 예제
-Tensorflow에서 DCGAN을 이용하여 MNIST 이미지를 생성하는 예제입니다.
-```
+# MNIST 데이터베이스를 활용한 DCGAN 예제
+# Tensorflow에서 DCGAN을 이용하여 MNIST 이미지를 생성하는 예제입니다.
+
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
@@ -150,4 +150,3 @@ with tf.Session() as sess:
                 bbox_inches='tight')
             
             plt.close(fig)
-```
